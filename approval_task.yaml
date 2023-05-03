@@ -2,7 +2,6 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: approval-task
-  namespace: sumit
 spec:
   params:
     - default: 'http://approval-sumit.apps.cluster-5pcchgtrk.5pcck.sandbox1921.opentlc.com'
