@@ -20,7 +20,7 @@ data:
                 <div class="col">
                 </div>
                 <div class="col">
-                    <form method="POST" action="http://approval-test.apps.cluster-vsrjf.vsrjf.sandbox2991.opentlc.com/submit">
+                    <form method="POST" action="http://approval-test.apps.cluster-vsrjghf.vsrjf.sandbox2991.opentlc.com/submit">
                             <button type="submit" name="approval" value="true">Approve</button>
                             <button type="submit" name="approval" value="false">Reject</button>
                     </form>
