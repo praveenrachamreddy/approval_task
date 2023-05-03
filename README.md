@@ -1,6 +1,6 @@
 # approval_task
 
-STEP 1 : **Your need to change your route URL inside frontend_cm :**
+STEP 1 : **Your need to change your route URL inside frontend_cm : action attribute----->**
 ---------------------------EXAMPLE---------------------------
 .............</head>
     <body>
@@ -10,7 +10,7 @@ STEP 1 : **Your need to change your route URL inside frontend_cm :**
                 <div class="col">
                 </div>
                 <div class="col">
-                    <form method="POST" action="**http://approval-test.apps.cluster-vsrjf.vsrjf.sandbox2991.opentlc.com**/submit">
+                    <form method="POST" action="---http://approval-test.apps.cluster-vsrjf.vhtrjf.sandbox2991.opentlc.com----/submit">       <<<-------
                             <button type="submit" name="approval" value="true">Approve</button>
                             <button type="submit" name="approval" value="false">Reject</button>
                     </form>.........................
@@ -49,7 +49,7 @@ spec:
         - name: recipients
           value: sumitbiswal98@gmail.com
         **- name: pipeline
-          value: $(context.pipelineRun.name)**
+          value: $(context.pipelineRun.name)**  <<-----------
       runAfter:
         - git-clone
       taskRef:
