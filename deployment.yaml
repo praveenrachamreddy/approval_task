@@ -18,8 +18,6 @@ spec:
       labels:
         app: approval
     spec:
-      imagePullSecrets:
-        - name: quay
       containers:
         - name: backend
           image: python:3.9
