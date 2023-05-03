@@ -4,7 +4,7 @@ metadata:
   name: approval-task
 spec:
   params:
-    - default: 'http://approval-sumit.apps.cluster-vsrjf.vsrjf.sandbox2991.opentlc.com/'
+    - default: 'http://approval-sumit.apps.cluster-vsrjf.vfdsrjf.sandbox2991.opentlc.com/'
       description: Link to the form for approval
       name: form-link
       type: string
