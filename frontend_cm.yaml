@@ -12,6 +12,7 @@ data:
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
       <h1>Approval Task</h1>
@@ -20,7 +21,7 @@ data:
                 <div class="col">
                 </div>
                 <div class="col">
-                    <form method="POST" action="http://approval-test.apps.cluster-vsrjghf.vsrjf.sandbox2991.opentlc.com/submit">
+                    <form method="POST" action="http://approval-sumit.apps.cluster-5pcck.5pcck.sandbox1921.opentlc.com/submit">
                             <button type="submit" name="approval" value="true">Approve</button>
                             <button type="submit" name="approval" value="false">Reject</button>
                     </form>
@@ -162,5 +163,6 @@ data:
               width: 120px;
             }
           }
+
     </style>
     </html>
