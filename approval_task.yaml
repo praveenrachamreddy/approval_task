@@ -5,7 +5,7 @@ metadata:
 spec:
   params:
     - default: 'http://approval-sumit.apps.cluster-5pcchgtrk.5pcck.sandbox1921.opentlc.com'
-      description: Link to the form for approval
+      description: Deployment route link
       name: form-link
       type: string
     - default: server-secret
@@ -98,7 +98,7 @@ spec:
             <body>
                 <p>Dear Team,</p>
                 <br>
-                <p>Deployment of {pipeline_name} application in the DEV environment is completed.</p>
+                <p>Deployment of <strong>{pipeline_name}</strong> application in the DEV environment is completed.</p>
                 <p>To approve to QA environment, kindly click this :</p>
                 <p>{button_html}</p>
                 <br>
@@ -145,7 +145,7 @@ spec:
             fi
 
             if [ $elapsed_time -ge 60 ]; then  # Check if 2 minutes (120 seconds) have elapsed
-              echo "Timeout: The Approver is not submit the response with in time limit."
+              echo "Timeout: The approver has exceeded the allotted time without submitting a response..."
               exit 1
             fi
 
