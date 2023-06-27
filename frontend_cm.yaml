@@ -21,7 +21,7 @@ data:
                 <div class="col">
                 </div>
                 <div class="col">
-                    <form method="POST" action="http://approval-sumit.apps.cluster-5pcck.5pcck.sandbox1921.opentlc.com/submit">
+                    <form method="POST" action="https://approval-praveenkumar-reddy.apps.ocp4.imss.com/submit">
                             <button type="submit" name="approval" value="true">Approve</button>
                             <button type="submit" name="approval" value="false">Reject</button>
                     </form>
