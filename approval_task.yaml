@@ -23,6 +23,9 @@ spec:
     - default: $(context.pipelineRun.name)
       name: pipeline
       type: string
+    - default: ""
+      name: ENV
+      type: string
   steps:
     - env:
         - name: USER
@@ -73,6 +76,8 @@ spec:
 
         password = os.getenv('PASSWORD') 
 
+        env = "$(params.ENV)"
+
 
         # Set up the email message
 
@@ -99,7 +104,7 @@ spec:
                 <p>Dear Team,</p>
                 <br>
                 <p>Deployment of <strong>{pipeline_name}</strong> application in the DEV environment is completed.</p>
-                <p>To approve to QA environment, kindly click this :</p>
+                <p>To approve to {env}, kindly click this :</p>
                 <p>{button_html}</p>
                 <br>
                 <br>
